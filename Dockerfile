@@ -6,7 +6,6 @@ RUN apt-get install -y apt-utils
 
 RUN git clone https://github.com/rhuard/NewStartup.git $HOME/NewStartup
 
-RUN pwd
 RUN $HOME/NewStartup/docker_image.sh
 
-CMD ["zsh", "$HOME"]
+CMD ["zsh"]
