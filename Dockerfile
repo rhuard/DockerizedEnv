@@ -8,4 +8,6 @@ RUN git clone https://github.com/rhuard/NewStartup.git $HOME/NewStartup
 
 RUN $HOME/NewStartup/docker_image.sh
 
+RUN vim +PluginInstall +qall
+
 CMD ["zsh"]
