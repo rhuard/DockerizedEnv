@@ -11,15 +11,17 @@ RUN apt update && apt install -y dialog apt-utils && apt upgrade && apt install 
     python2.7 \
     python3 \
     python-pip \
+    python-dev \
+    python3-dev \
     gcc \
     bcc \
     cmake \
+    openjdk-8-jdk \
+    openjdk-8-jre \
     vim \
     vim-nox-py2 \
     wget \
     curl \
-    python-dev \
-    python3-dev \
     tmux \
     zsh \
     ack-grep \
@@ -37,9 +39,7 @@ RUN apt update && apt install -y dialog apt-utils && apt upgrade && apt install 
     aspell \
     feh \
     bsdmainutils \
-    iputils-ping \
-    openjdk-8-jdk \
-    openjdk-8-jre
+    iputils-ping
 
 # Install vim plugins
 RUN git clone https://github.com/rhuard/NewStartup.git $HOME/NewStartup && $HOME/NewStartup/docker_image.sh && vim +PluginInstall +qall
