@@ -3,7 +3,7 @@ FROM ubuntu:xenial
 ENV TERM xterm
 
 #Install programs
-RUN apt update && apt install -y dialog apt-utils && apt upgrade && apt install -y \
+RUN apt update && apt install -y dialog apt-utils && apt upgrade -y && apt install -y \
     git \
     llvm \
     clang \
