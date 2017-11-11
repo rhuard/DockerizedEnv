@@ -42,7 +42,8 @@ RUN apt update && apt install -y dialog apt-utils && apt upgrade && apt install 
     iputils-ping \
     man \
     host \
-    dnsutils
+    dnsutils \
+    lua5.3
 
 # Install vim plugins
 RUN git clone https://github.com/rhuard/NewStartup.git $HOME/NewStartup && $HOME/NewStartup/docker_image.sh && vim +PluginInstall +qall
